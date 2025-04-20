@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" xmlns:og="https://ogp.me/ns#">
   <head>
     <meta charset="utf8" />
@@ -153,7 +153,9 @@
         font-style: normal;
         font-display: swap;
         font-weight: 400;
-        src: local("Nunito Sans Regular"), local("NunitoSans-Regular"),
+        src:
+          local("Nunito Sans Regular"),
+          local("NunitoSans-Regular"),
           url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I90.woff)
             format("woff");
       }
@@ -162,7 +164,9 @@
         font-style: normal;
         font-display: swap;
         font-weight: 700;
-        src: local("Nunito Sans Bold"), local("NunitoSans-Bold"),
+        src:
+          local("Nunito Sans Bold"),
+          local("NunitoSans-Bold"),
           url(https://fonts.gstatic.com/s/nunitosans/v5/pe03MImSLYBIv1o4X1M8cc8GBs5tU1c.woff)
             format("woff");
       }
@@ -171,13 +175,16 @@
         font-style: normal;
         font-display: swap;
         font-weight: 800;
-        src: local("Nunito Sans ExtraBold"), local("NunitoSans-ExtraBold"),
+        src:
+          local("Nunito Sans ExtraBold"),
+          local("NunitoSans-ExtraBold"),
           url(https://fonts.gstatic.com/s/nunitosans/v5/pe03MImSLYBIv1o4X1M8cc8aBc5tU1c.woff)
             format("woff");
       }
       @font-face {
         font-family: "proxima-nova";
-        src: url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+        src:
+          url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
             format("woff2"),
           url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
             format("woff"),
@@ -189,7 +196,8 @@
       }
       @font-face {
         font-family: "proxima-nova";
-        src: url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
+        src:
+          url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
             format("woff2"),
           url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
             format("woff"),
@@ -201,7 +209,8 @@
       }
       @font-face {
         font-family: "proxima-nova";
-        src: url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+        src:
+          url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
             format("woff2"),
           url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
             format("woff"),
@@ -213,7 +222,8 @@
       }
       @font-face {
         font-family: "proxima-nova";
-        src: url("https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3")
+        src:
+          url("https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3")
             format("woff2"),
           url("https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3")
             format("woff"),
@@ -224,8 +234,9 @@
         font-weight: 800;
       }
       :root {
-        --fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        --fallback:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+          Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         --font-1: var(--fallback);
         --font-2: var(--fallback);
       }
@@ -238,8 +249,11 @@
     <style>
       body.fonts-loaded {--font-1: Nunito Sans', sans-serif;--font-2: proxima-nova, sans-serif;}
     </style>
-    <link rel=”alternate" type="application/rss+xml"
-    href="https://www.thequint.com/stories.rss?section=news"/>
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://www.thequint.com/stories.rss?section=news"
+    />
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -301,7 +315,7 @@
                   i,
                   function (e) {
                     return t[e];
-                  }.bind(null, i)
+                  }.bind(null, i),
                 );
             return o;
           }),
@@ -430,7 +444,7 @@
                         (u(t) && /Apple/.test(window.navigator.vendor)
                           ? ((t =
                               /AppleWebKit\/([0-9]+)(?:\.([0-9]+))(?:\.([0-9]+))/.exec(
-                                window.navigator.userAgent
+                                window.navigator.userAgent,
                               )),
                             (l = !!t && 603 > parseInt(t[1], 10)))
                           : (l = !1)),
@@ -462,22 +476,25 @@
                     document.body
                       ? t()
                       : document.addEventListener
-                      ? document.addEventListener(
-                          "DOMContentLoaded",
-                          function e() {
-                            document.removeEventListener("DOMContentLoaded", e),
-                              t();
-                          }
-                        )
-                      : document.attachEvent(
-                          "onreadystatechange",
-                          function e() {
-                            ("interactive" != document.readyState &&
-                              "complete" != document.readyState) ||
-                              (document.detachEvent("onreadystatechange", e),
-                              t());
-                          }
-                        );
+                        ? document.addEventListener(
+                            "DOMContentLoaded",
+                            function e() {
+                              document.removeEventListener(
+                                "DOMContentLoaded",
+                                e,
+                              ),
+                                t();
+                            },
+                          )
+                        : document.attachEvent(
+                            "onreadystatechange",
+                            function e() {
+                              ("interactive" != document.readyState &&
+                                "complete" != document.readyState) ||
+                                (document.detachEvent("onreadystatechange", e),
+                                t());
+                            },
+                          );
                   })(function () {
                     function l() {
                       var e;
@@ -488,7 +505,7 @@
                         ((e = y != v && y != w && v != w) ||
                           (null === a &&
                             ((e = /AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(
-                              window.navigator.userAgent
+                              window.navigator.userAgent,
                             )),
                             (a =
                               !!e &&
@@ -576,24 +593,24 @@
                     "english" === n
                       ? (document.documentElement.style.setProperty(
                           "--font-1",
-                          "Nunito Sans"
+                          "Nunito Sans",
                         ),
                         document.documentElement.style.setProperty(
                           "--font-2",
-                          "proxima-nova"
+                          "proxima-nova",
                         ))
                       : (document.documentElement.style.setProperty(
                           "--font-1",
-                          "noto-sans"
+                          "noto-sans",
                         ),
                         document.documentElement.style.setProperty(
                           "--font-2",
-                          "noto-sans"
+                          "noto-sans",
                         ));
                   })
                   .catch(function (t) {
                     console.warn(
-                      "Some critical font are not available: ".concat(t, " ")
+                      "Some critical font are not available: ".concat(t, " "),
                     );
                   });
               };
@@ -613,7 +630,7 @@
           { fontName: "proxima-nova", data: { weight: 800 } },
         ],
         "fonts-loaded",
-        "english"
+        "english",
       );
     </script>
 
@@ -3375,7 +3392,8 @@
         font-weight: 400;
         font-style: normal;
         src: url(/thequint/assets/slick-a4e97f5a2a64f0ab1323.eot);
-        src: url(/thequint/assets/slick-a4e97f5a2a64f0ab1323.eot?#iefix)
+        src:
+          url(/thequint/assets/slick-a4e97f5a2a64f0ab1323.eot?#iefix)
             format("embedded-opentype"),
           url(/thequint/assets/slick-295183786cd8a1389865.woff) format("woff"),
           url(/thequint/assets/slick-c94f7671dcc99dce43e2.ttf)
@@ -10104,7 +10122,7 @@
             document,
             "script",
             "https://cdn.moengage.com/webpush/moe_webSdk.min.latest.js",
-            "Moengage"
+            "Moengage",
           );
 
           Moengage = moe({
@@ -10123,7 +10141,7 @@
               var payload = data.payload;
               var impTracker = data.imp;
               var clickTracker = data.click({ widget_id: "sample_widget_id" });
-            }
+            },
           );
 
           // Moengage.onsite.getData("varun_test_tag", function (err, data) {
@@ -10168,7 +10186,7 @@
 
           const resizeIframe = (data) => {
             const iframesList = document.querySelectorAll(
-              `[id*="${data.iframe}"]`
+              `[id*="${data.iframe}"]`,
             );
             const iframeContainer = iframesList[iframesList.length - 1];
             const iframeParent = iframeContainer.parentNode;
@@ -10182,7 +10200,7 @@
 
           const replaceAdContent = (data) => {
             const adUnitsList = document.querySelectorAll(
-              `div[id*="${data.adUnit}"]`
+              `div[id*="${data.adUnit}"]`,
             );
             const adUnitContainer = adUnitsList[adUnitsList.length - 1];
             adUnitContainer.innerHTML = data.content;
@@ -10207,7 +10225,7 @@
 
               clearInterval(timer);
             },
-            false
+            false,
           );
         }, delay);
       });
@@ -11301,42 +11319,42 @@
             <ul class="mobile-top-nav-item _1bFcO">
               <li class="top-navbar-1 J_MHx">
                 <a id="ga4-header-20" href="/fit"
-                  ><div style="color: ">FIT</div></a
+                  ><div style="color:">FIT</div></a
                 >
               </li>
               <li class="top-navbar-2 J_MHx">
                 <a id="ga4-header-21" href="/gender"
-                  ><div style="color: ">Gender</div></a
+                  ><div style="color:">Gender</div></a
                 >
               </li>
               <li class="top-navbar-3 J_MHx">
                 <a id="ga4-header-22" href="/opinion"
-                  ><div style="color: ">Opinion</div></a
+                  ><div style="color:">Opinion</div></a
                 >
               </li>
               <li class="top-navbar-4 J_MHx">
                 <a id="ga4-header-23" href="/videos"
-                  ><div style="color: ">Videos</div></a
+                  ><div style="color:">Videos</div></a
                 >
               </li>
               <li class="top-navbar-5 J_MHx">
                 <a id="ga4-header-24" href="/entertainment"
-                  ><div style="color: ">Entertainment</div></a
+                  ><div style="color:">Entertainment</div></a
                 >
               </li>
               <li class="top-navbar-6 J_MHx">
                 <a id="ga4-header-25" href="/sports"
-                  ><div style="color: ">Sports</div></a
+                  ><div style="color:">Sports</div></a
                 >
               </li>
               <li class="top-navbar-7 J_MHx">
                 <a id="ga4-header-26" href="/news/world"
-                  ><div style="color: ">World</div></a
+                  ><div style="color:">World</div></a
                 >
               </li>
               <li class="top-navbar-8 J_MHx">
                 <a id="ga4-header-27" href="/explainers"
-                  ><div style="color: ">Explainers</div></a
+                  ><div style="color:">Explainers</div></a
                 >
               </li>
               <li class="J_MHx _1bEEc">
@@ -11344,43 +11362,43 @@
                   <div class="_2L_J0">More</div>
                   <ul class="_2PdJX">
                     <li class="top-navbar-9 _2h_9r">
-                      <a href="/podcast"><div style="color: ">Podcasts</div></a>
+                      <a href="/podcast"><div style="color:">Podcasts</div></a>
                     </li>
                     <li class="top-navbar-10 _2h_9r">
                       <a href="/news/politics"
-                        ><div style="color: ">Politics</div></a
+                        ><div style="color:">Politics</div></a
                       >
                     </li>
                     <li class="top-navbar-11 _2h_9r">
                       <a href="/the-quint-lab"
-                        ><div style="color: ">The Quint Lab</div></a
+                        ><div style="color:">The Quint Lab</div></a
                       >
                     </li>
                     <li class="top-navbar-12 _2h_9r">
                       <a href="/news/graphic-novels"
-                        ><div style="color: ">Graphic Novels</div></a
+                        ><div style="color:">Graphic Novels</div></a
                       >
                     </li>
                     <li class="top-navbar-13 _2h_9r">
-                      <a href="/news/law"><div style="color: ">Law</div></a>
+                      <a href="/news/law"><div style="color:">Law</div></a>
                     </li>
                     <li class="top-navbar-14 _2h_9r">
                       <a href="/news/education"
-                        ><div style="color: ">Education</div></a
+                        ><div style="color:">Education</div></a
                       >
                     </li>
                     <li class="top-navbar-15 _2h_9r">
                       <a href="/my-report/members-opinion"
-                        ><div style="color: ">Members&#x27; Opinion</div></a
+                        ><div style="color:">Members&#x27; Opinion</div></a
                       >
                     </li>
                     <li class="top-navbar-16 _2h_9r">
                       <a href="/south-asians"
-                        ><div style="color: ">South Asians</div></a
+                        ><div style="color:">South Asians</div></a
                       >
                     </li>
                     <li class="top-navbar-17 _2h_9r">
-                      <a href="/neon"><div style="color: ">NEON</div></a>
+                      <a href="/neon"><div style="color:">NEON</div></a>
                     </li>
                   </ul>
                 </div>
@@ -11627,7 +11645,7 @@
                     class=""
                     href="https://www.thequint.com/about-us"
                     target="_blank"
-                    ><div style="color: ">About Us</div></a
+                    ><div style="color:">About Us</div></a
                   >
                 </li>
                 <li class="top-navbar-5 _1bIDQ">
@@ -11635,7 +11653,7 @@
                     class=""
                     href="https://www.thequint.com/terms-and-conditions"
                     target="_blank"
-                    ><div style="color: ">T&amp;C</div></a
+                    ><div style="color:">T&amp;C</div></a
                   >
                 </li>
                 <li class="top-navbar-6 _1bIDQ">
@@ -11643,7 +11661,7 @@
                     class=""
                     href="https://www.thequint.com/privacy-policy"
                     target="_blank"
-                    ><div style="color: ">Privacy Policy</div></a
+                    ><div style="color:">Privacy Policy</div></a
                   >
                 </li>
               </ul>
@@ -11951,7 +11969,7 @@
                     <div>
                       <div
                         id="story-body-wrapper"
-                        style="max-height: "
+                        style="max-height:"
                         class="story-body _3odqB ZOKAD"
                       >
                         <div>
@@ -13096,89 +13114,89 @@
                 <ul class="_1v3m6">
                   <li class="footer-sections-1 _1h-7a">
                     <a id="ga4-footer-sections-1" href="/fit"
-                      ><div style="color: ">FIT</div></a
+                      ><div style="color:">FIT</div></a
                     >
                   </li>
                   <li class="footer-sections-2 _1h-7a">
                     <a id="ga4-footer-sections-2" href="/gender"
-                      ><div style="color: ">Gender</div></a
+                      ><div style="color:">Gender</div></a
                     >
                   </li>
                   <li class="footer-sections-3 _1h-7a">
                     <a id="ga4-footer-sections-3" href="/opinion"
-                      ><div style="color: ">Opinion</div></a
+                      ><div style="color:">Opinion</div></a
                     >
                   </li>
                   <li class="footer-sections-4 _1h-7a">
                     <a id="ga4-footer-sections-4" href="/videos"
-                      ><div style="color: ">Videos</div></a
+                      ><div style="color:">Videos</div></a
                     >
                   </li>
                   <li class="footer-sections-5 _1h-7a">
                     <a id="ga4-footer-sections-5" href="/entertainment"
-                      ><div style="color: ">Entertainment</div></a
+                      ><div style="color:">Entertainment</div></a
                     >
                   </li>
                   <li class="footer-sections-6 _1h-7a">
                     <a id="ga4-footer-sections-6" href="/sports"
-                      ><div style="color: ">Sports</div></a
+                      ><div style="color:">Sports</div></a
                     >
                   </li>
                   <li class="footer-sections-7 _1h-7a">
                     <a id="ga4-footer-sections-7" href="/news/world"
-                      ><div style="color: ">World</div></a
+                      ><div style="color:">World</div></a
                     >
                   </li>
                   <li class="footer-sections-8 _1h-7a">
                     <a id="ga4-footer-sections-8" href="/explainers"
-                      ><div style="color: ">Explainers</div></a
+                      ><div style="color:">Explainers</div></a
                     >
                   </li>
                   <li class="footer-sections-9 _1h-7a">
                     <a id="ga4-footer-sections-9" href="/podcast"
-                      ><div style="color: ">Podcasts</div></a
+                      ><div style="color:">Podcasts</div></a
                     >
                   </li>
                   <li class="footer-sections-10 _1h-7a">
                     <a id="ga4-footer-sections-10" href="/news/politics"
-                      ><div style="color: ">Politics</div></a
+                      ><div style="color:">Politics</div></a
                     >
                   </li>
                   <li class="footer-sections-11 _1h-7a">
                     <a id="ga4-footer-sections-11" href="/the-quint-lab"
-                      ><div style="color: ">The Quint Lab</div></a
+                      ><div style="color:">The Quint Lab</div></a
                     >
                   </li>
                   <li class="footer-sections-12 _1h-7a">
                     <a id="ga4-footer-sections-12" href="/news/graphic-novels"
-                      ><div style="color: ">Graphic Novels</div></a
+                      ><div style="color:">Graphic Novels</div></a
                     >
                   </li>
                   <li class="footer-sections-13 _1h-7a">
                     <a id="ga4-footer-sections-13" href="/news/law"
-                      ><div style="color: ">Law</div></a
+                      ><div style="color:">Law</div></a
                     >
                   </li>
                   <li class="footer-sections-14 _1h-7a">
                     <a id="ga4-footer-sections-14" href="/news/education"
-                      ><div style="color: ">Education</div></a
+                      ><div style="color:">Education</div></a
                     >
                   </li>
                   <li class="footer-sections-15 _1h-7a">
                     <a
                       id="ga4-footer-sections-15"
                       href="/my-report/members-opinion"
-                      ><div style="color: ">Members&#x27; Opinion</div></a
+                      ><div style="color:">Members&#x27; Opinion</div></a
                     >
                   </li>
                   <li class="footer-sections-16 _1h-7a">
                     <a id="ga4-footer-sections-16" href="/south-asians"
-                      ><div style="color: ">South Asians</div></a
+                      ><div style="color:">South Asians</div></a
                     >
                   </li>
                   <li class="footer-sections-17 _1h-7a">
                     <a id="ga4-footer-sections-17" href="/neon"
-                      ><div style="color: ">NEON</div></a
+                      ><div style="color:">NEON</div></a
                     >
                   </li>
                 </ul>
@@ -13192,7 +13210,7 @@
                       class=""
                       href="https://www.thequint.com/opinion/neet-ugc-net-the-leak-in-our-education-system-is-anti-cheating-law-enough"
                       target="_blank"
-                      ><div style="color: ">Anti-Cheating Law</div></a
+                      ><div style="color:">Anti-Cheating Law</div></a
                     >
                   </li>
                   <li class="footer-trending-topic-2 _1h-7a">
@@ -13201,7 +13219,7 @@
                       class=""
                       href="https://www.thequint.com/entertainment/celebrities/mirzapur-season-3-interview-rasika-dugal-vijay-varma-shweta-tripathi-sharma"
                       target="_blank"
-                      ><div style="color: ">Rasika Dugal Interview</div></a
+                      ><div style="color:">Rasika Dugal Interview</div></a
                     >
                   </li>
                   <li class="footer-trending-topic-3 _1h-7a">
@@ -13210,7 +13228,7 @@
                       class=""
                       href="https://www.thequint.com/opinion/phantom-trial-of-arundhati-roy-2010-uapa-case"
                       target="_blank"
-                      ><div style="color: ">Arundhati Roy</div></a
+                      ><div style="color:">Arundhati Roy</div></a
                     >
                   </li>
                   <li class="footer-trending-topic-4 _1h-7a">
@@ -13219,7 +13237,7 @@
                       class=""
                       href="https://www.thequint.com/sports/football/euro-2024-italy-stun-croatia-spain-advance-with-perfect-record"
                       target="_blank"
-                      ><div style="color: ">Euro 2024</div></a
+                      ><div style="color:">Euro 2024</div></a
                     >
                   </li>
                   <li class="footer-trending-topic-5 _1h-7a">
@@ -13228,7 +13246,7 @@
                       class=""
                       href="https://www.thequint.com/sports/cricket/t20-world-cup-2024-jasprit-bumrah-headliner-chuck-the-big-3-its-just-the-big-me-kendrick-lamar"
                       target="_blank"
-                      ><div style="color: ">T20 World Cup</div></a
+                      ><div style="color:">T20 World Cup</div></a
                     >
                   </li>
                   <li class="footer-trending-topic-6 _1h-7a">
@@ -13237,7 +13255,7 @@
                       class=""
                       href="https://www.thequint.com/sports/cricket/triple-farewell-virat-kohli-rohit-sharma-ravindra-jadeja-retire-indian-cricket-usher-new-era"
                       target="_blank"
-                      ><div style="color: ">
+                      ><div style="color:">
                         Kohli, Rohit &amp; Jadeja Retire
                       </div></a
                     >
@@ -13259,7 +13277,7 @@
                       class=""
                       href="https://www.thequint.com/topic/electoral-bonds"
                       target="_blank"
-                      ><div style="color: ">Electoral Bonds News</div></a
+                      ><div style="color:">Electoral Bonds News</div></a
                     >
                   </li>
                   <li class="footer-trending-topic-9 _1h-7a">
@@ -13268,7 +13286,7 @@
                       class=""
                       href="https://www.thequint.com/topic/rahul-gandhi"
                       target="_blank"
-                      ><div style="color: ">Rahul Gandhi</div></a
+                      ><div style="color:">Rahul Gandhi</div></a
                     >
                   </li>
                   <li class="footer-trending-topic-10 _1h-7a">
@@ -13277,7 +13295,7 @@
                       class=""
                       href="https://www.thequint.com/entertainment/movie-reviews/kill-full-movie-review-indian-cinema-action-violence-gore-train-to-busan-raghav-july-movie-lakshya"
                       target="_blank"
-                      ><div style="color: ">‘Kill’ Review</div></a
+                      ><div style="color:">‘Kill’ Review</div></a
                     >
                   </li>
                   <li class="footer-trending-topic-11 _1h-7a">
@@ -13286,7 +13304,7 @@
                       class=""
                       href="https://www.thequint.com/topic/modi"
                       target="_blank"
-                      ><div style="color: ">PM Modi</div></a
+                      ><div style="color:">PM Modi</div></a
                     >
                   </li>
                   <li class="footer-trending-topic-12 _1h-7a">
@@ -13295,7 +13313,7 @@
                       class=""
                       href="https://www.thequint.com/opinion/what-does-robert-f-kennedy-jr-have-to-run-for-us-presidential-election-2024"
                       target="_blank"
-                      ><div style="color: ">Robert F Kennedy Jr</div></a
+                      ><div style="color:">Robert F Kennedy Jr</div></a
                     >
                   </li>
                   <li class="footer-trending-topic-13 _1h-7a">
@@ -13304,7 +13322,7 @@
                       class=""
                       href="https://www.thequint.com/sports/cricket/t20-world-cup-2024-rahul-dravid-last-act-exorcises-ghosts-of-west-indies"
                       target="_blank"
-                      ><div style="color: ">Rahul Dravid</div></a
+                      ><div style="color:">Rahul Dravid</div></a
                     >
                   </li>
                 </ul>
@@ -24891,7 +24909,7 @@
 
       document.documentElement.setAttribute(
         "theme",
-        `quint-${isDarktheme ? "dark" : "white"}`
+        `quint-${isDarktheme ? "dark" : "white"}`,
       );
     </script>
     <script type="text/javascript">
@@ -24926,7 +24944,7 @@
     <script>
       const clientWidth = Math.max(
         document.documentElement.clientWidth,
-        window.innerWidth || 0
+        window.innerWidth || 0,
       );
       const heroElement = document.getElementsByClassName("qt-image")[0];
       if (heroElement) {

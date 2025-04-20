@@ -16,6 +16,7 @@
       imports = [inputs.treefmt-nix.flakeModule];
       perSystem.treefmt = {
         flakeCheck = false;
+        projectRootFile = "flake.nix";
 
         programs = {
           #typos.enable = true;
@@ -27,7 +28,6 @@
           prettier.enable = true;
         };
 
-        projectRootFile = "flake.nix";
       };
     };
 }
