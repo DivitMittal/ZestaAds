@@ -1,4 +1,5 @@
-# Jetbrains IDE
-.idea/
-
+## macOS directories metadata
 **/.DS_Store
+## Nix builds
+result
+result-
