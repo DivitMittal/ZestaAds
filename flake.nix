@@ -1,33 +1,42 @@
 {
-  description = "Project Ads flake";
+  description = "{project-name} flake";
 
   outputs = inputs: let
     inherit (inputs.flake-parts.lib) mkFlake;
+    specialArgs.customLib = builtins.import (inputs.OS-nixCfg + "/lib/custom.nix") {inherit (inputs.nixpkgs) lib;};
   in
-    mkFlake {inherit inputs;} {
+    mkFlake {inherit inputs specialArgs;} ({inputs, ...}: {
       systems = builtins.import inputs.systems;
-      imports = [inputs.treefmt-nix.flakeModule];
-      perSystem.treefmt = {
-        flakeCheck = false;
-        projectRootFile = "flake.nix";
-
-        programs = {
-          #typos.enable = true;
-          ## Nix
-          alejandra.enable = true;
-          deadnix.enable = true;
-          statix.enable = true;
-        };
-      };
-    };
+      imports = [./flake];
+    });
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
+    devshell = {
+      url = "github:numtide/devshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+    pre-commit-hooks = {
+      url = "github:cachix/git-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    actions-nix = {
+      url = "github:nialov/actions.nix";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-parts.follows = "flake-parts";
+        pre-commit-hooks.follows = "pre-commit-hooks";
+      };
+    };
+    OS-nixCfg = {
+      url = "github:DivitMittal/OS-nixCfg";
+      flake = false;
     };
   };
 }
