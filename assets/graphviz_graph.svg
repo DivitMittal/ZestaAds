@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg height='320pt' preserveAspectRatio='xMidYMid meet' viewBox='0.00 0.00 602.02 320.00' width='602pt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'>
+<g class='graph' id='graph0' transform='scale(1 1) rotate(0) translate(4 316)'>
+<title>ZestaAds</title>
+<polygon fill='white' points='-4,4 -4,-316 598.02,-316 598.02,4 -4,4' stroke='none'/>
+
+<g class='node' id='node1'>
+<title>Intrusive_Ads</title>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='80.38' y='-12.95'>Intrusive Ads</text>
+</g>
+
+<g class='node' id='node2'>
+<title>Data_Collection</title>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='80.38' y='-66.95'>Privacy Concerns</text>
+</g>
+
+<g class='node' id='node3'>
+<title>UI_Integration</title>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='80.38' y='-120.95'>Poor UI Integration</text>
+</g>
+
+<g class='node' id='node4'>
+<title>Gen_AI</title>
+<path d='M148.75,-203.5C148.75,-203.5 12,-203.5 12,-203.5 6,-203.5 0,-197.5 0,-191.5 0,-191.5 0,-174.5 0,-174.5 0,-168.5 6,-162.5 12,-162.5 12,-162.5 148.75,-162.5 148.75,-162.5 154.75,-162.5 160.75,-168.5 160.75,-174.5 160.75,-174.5 160.75,-191.5 160.75,-191.5 160.75,-197.5 154.75,-203.5 148.75,-203.5' fill='none' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='80.38' y='-186.2'>Generative AI</text>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='80.38' y='-169.7'>(Interactive &amp; Appealling)</text>
+</g>
+
+<g class='node' id='node5'>
+<title>Personalization</title>
+<path d='M301.25,-203.5C301.25,-203.5 208.75,-203.5 208.75,-203.5 202.75,-203.5 196.75,-197.5 196.75,-191.5 196.75,-191.5 196.75,-174.5 196.75,-174.5 196.75,-168.5 202.75,-162.5 208.75,-162.5 208.75,-162.5 301.25,-162.5 301.25,-162.5 307.25,-162.5 313.25,-168.5 313.25,-174.5 313.25,-174.5 313.25,-191.5 313.25,-191.5 313.25,-197.5 307.25,-203.5 301.25,-203.5' fill='none' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='255' y='-186.2'>Personalization</text>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='255' y='-169.7'>(Fine&#45;tuned LLM)</text>
+</g>
+
+<g class='edge' id='edge1'>
+<title>Gen_AI&#45;&gt;Personalization</title>
+<path d='M161.12,-183C169.13,-183 177.22,-183 185.11,-183' fill='none' stroke='black'/>
+<polygon fill='black' points='184.97,-186.5 194.97,-183 184.97,-179.5 184.97,-186.5' stroke='black'/>
+</g>
+
+<g class='node' id='node6'>
+<title>Ad_Formats</title>
+<path d='M440.25,-203.5C440.25,-203.5 361.25,-203.5 361.25,-203.5 355.25,-203.5 349.25,-197.5 349.25,-191.5 349.25,-191.5 349.25,-174.5 349.25,-174.5 349.25,-168.5 355.25,-162.5 361.25,-162.5 361.25,-162.5 440.25,-162.5 440.25,-162.5 446.25,-162.5 452.25,-168.5 452.25,-174.5 452.25,-174.5 452.25,-191.5 452.25,-191.5 452.25,-197.5 446.25,-203.5 440.25,-203.5' fill='none' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='400.75' y='-186.2'>Ad Formats</text>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='400.75' y='-169.7'>(Text &amp; Image)</text>
+</g>
+
+<g class='edge' id='edge2'>
+<title>Personalization&#45;&gt;Ad_Formats</title>
+<path d='M313.64,-183C321.51,-183 329.62,-183 337.57,-183' fill='none' stroke='black'/>
+<polygon fill='black' points='337.54,-186.5 347.54,-183 337.54,-179.5 337.54,-186.5' stroke='black'/>
+</g>
+
+<g class='node' id='node11'>
+<title>Consumers</title>
+<ellipse cx='541.14' cy='-183' fill='none' rx='52.89' ry='18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='541.14' y='-177.95'>Consumers</text>
+</g>
+
+<g class='edge' id='edge6'>
+<title>Ad_Formats&#45;&gt;Consumers</title>
+<path d='M452.49,-183C460.36,-183 468.57,-183 476.67,-183' fill='none' stroke='black'/>
+<polygon fill='black' points='476.49,-186.5 486.49,-183 476.49,-179.5 476.49,-186.5' stroke='black'/>
+</g>
+
+<g class='node' id='node7'>
+<title>Bidding_System</title>
+<path d='M294.88,-258C294.88,-258 215.12,-258 215.12,-258 209.12,-258 203.12,-252 203.12,-246 203.12,-246 203.12,-234 203.12,-234 203.12,-228 209.12,-222 215.12,-222 215.12,-222 294.88,-222 294.88,-222 300.88,-222 306.88,-228 306.88,-234 306.88,-234 306.88,-246 306.88,-246 306.88,-252 300.88,-258 294.88,-258' fill='none' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='255' y='-234.95'>Bidding System</text>
+</g>
+
+<g class='node' id='node8'>
+<title>Developer_API</title>
+<path d='M437.25,-285C437.25,-285 364.25,-285 364.25,-285 358.25,-285 352.25,-279 352.25,-273 352.25,-273 352.25,-261 352.25,-261 352.25,-255 358.25,-249 364.25,-249 364.25,-249 437.25,-249 437.25,-249 443.25,-249 449.25,-255 449.25,-261 449.25,-261 449.25,-273 449.25,-273 449.25,-279 443.25,-285 437.25,-285' fill='none' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='400.75' y='-261.95'>Developer API</text>
+</g>
+
+<g class='edge' id='edge3'>
+<title>Bidding_System&#45;&gt;Developer_API</title>
+<path d='M307.09,-249.6C318.1,-251.66 329.83,-253.87 341.11,-255.99' fill='none' stroke='black'/>
+<polygon fill='black' points='340.23,-259.38 350.7,-257.79 341.52,-252.5 340.23,-259.38' stroke='black'/>
+</g>
+
+<g class='node' id='node9'>
+<title>Advertisers</title>
+<ellipse cx='80.38' cy='-240' fill='none' rx='53.4' ry='18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='80.38' y='-234.95'>Advertisers</text>
+</g>
+
+<g class='edge' id='edge4'>
+<title>Advertisers&#45;&gt;Bidding_System</title>
+<path d='M134.11,-240C152.17,-240 172.56,-240 191.33,-240' fill='none' stroke='black'/>
+<polygon fill='black' points='191.26,-243.5 201.26,-240 191.26,-236.5 191.26,-243.5' stroke='black'/>
+</g>
+
+<g class='node' id='node10'>
+<title>Publishers</title>
+<ellipse cx='255' cy='-294' fill='none' rx='49.3' ry='18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='255' y='-288.95'>Publishers</text>
+</g>
+
+<g class='edge' id='edge5'>
+<title>Publishers&#45;&gt;Developer_API</title>
+<path d='M299.52,-285.83C312.56,-283.38 327.08,-280.65 340.94,-278.05' fill='none' stroke='black'/>
+<polygon fill='black' points='341.2,-281.56 350.38,-276.27 339.9,-274.68 341.2,-281.56' stroke='black'/>
+</g>
+</g>
+</svg>
