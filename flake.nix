@@ -1,5 +1,5 @@
 {
-  description = "{project-name} flake";
+  description = "ZestaAds' flake";
 
   outputs = inputs: let
     inherit (inputs.flake-parts.lib) mkFlake;

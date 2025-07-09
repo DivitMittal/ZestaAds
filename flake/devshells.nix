@@ -12,7 +12,7 @@
   }: {
     devshells.default = {
       devshell = rec {
-        name = "{project-name}";
+        name = "ZestaAds";
         motd = "{202}Welcome to {91}${name} {202}devshell!{reset} \n $(menu)";
         startup = {
           git-hooks.text = ''
@@ -25,6 +25,9 @@
             ### LSPs & Formatters
             nixd
             alejandra
+            ## Documentaion
+            asciidoctor-with-extensions
+            graphviz-nox
             ;
         };
       };
