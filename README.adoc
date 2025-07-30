@@ -1,5 +1,6 @@
 = Zesta Ads
-image:https://github.com/DivitMittal/ZestaAds/actions/workflows/flake-check.yml/badge.svg[link=https://github.com/DivitMittal/ZestaAds/actions/workflows/flake-check.yml]
+:imagesdir: ./assets
+image::https://github.com/DivitMittal/ZestaAds/actions/workflows/flake-check.yml/badge.svg[nix-flake-check]
 
 == Introduction
 
@@ -24,7 +25,48 @@ Zesta Ads tackles these challenges by leveraging cutting-edge AI to deliver ads 
 
 The Zesta Ads platform is built on a modern, scalable architecture. The following diagram illustrates the core components of our system.
 
-image::assets/graphviz_graph.svg[Zesta Ads Architecture]
+[graphviz, format=svg]
+....
+digraph ZestaAds {
+    rankdir=LR;
+    node [shape=box, style=rounded];
+
+    subgraph "Problems" {
+        node [shape=plaintext];
+        Intrusive_Ads [label="Intrusive Ads"];
+        Data_Collection [label="Privacy Concerns"];
+        UI_Integration [label="Poor UI Integration"];
+    }
+
+    subgraph "Zesta Ads Platform" {
+        subgraph "Product" {
+            Gen_AI [label="Generative AI\n(Interactive & Appealling)"];
+            Personalization [label="Personalization\n(Fine-tuned LLM)"];
+            Ad_Formats [label="Ad Formats\n(Text & Image)"];
+        }
+
+        subgraph "Backend" {
+            Bidding_System [label="Bidding System"];
+            Developer_API [label="Developer API"];
+        }
+
+        Gen_AI -> Personalization;
+        Personalization -> Ad_Formats;
+        Bidding_System -> Developer_API;
+    }
+
+    subgraph "Stakeholders" {
+        node [shape=ellipse];
+        Advertisers;
+        Publishers;
+        Consumers;
+    }
+
+    Advertisers -> Bidding_System;
+    Publishers -> Developer_API;
+    Ad_Formats -> Consumers;
+}
+....
 
 == Stakeholders
 
