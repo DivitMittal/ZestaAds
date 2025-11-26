@@ -1,6 +1,7 @@
 = Zesta Ads
 :imagesdir: ./assets
 image::https://github.com/DivitMittal/ZestaAds/actions/workflows/flake-check.yml/badge.svg[nix-flake-check]
+image::https://github.com/DivitMittal/ZestaAds/actions/workflows/flake-lock-update.yml/badge.svg[flake-lock-update]
 
 == Introduction
 
